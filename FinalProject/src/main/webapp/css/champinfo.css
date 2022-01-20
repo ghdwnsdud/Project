@@ -1,0 +1,439 @@
+@charset "UTF-8";
+*, *:before, *:after {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}
+body{background-color:#6E6E6E;font-family:sans-serif;text-transform:uppercase;font-size:16px;}
+a{text-decoration:none;color: black;}
+#header{background:#1E262D;width:100%;position:relative;}
+#header a{color:white}
+#header:after{content:"";clear:both;display:block}
+.search{float:right;padding:28px}
+input{border:none;padding:10px;border-radius:20px}
+.logo{float:left;padding:26px 0 26px;font-weight: bold;}
+.logo a{font-size:28px;display:block;padding:0 0 0 20px}
+nav{float:right;}
+nav>ul{float:left;position:relative}
+nav li{list-style:none;float:left}
+nav li a{float:left;padding:35px}
+nav li a:hover{background:#2C3E50}
+nav li ul{display:none}
+nav li:hover ul{display:inline}
+nav li li{float:none}
+
+
+nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
+nav li li a:hover{background:#bdc3c7;background:#FAFBFB}
+.mega-col{width:25%;float:left}
+
+@media only screen and (max-width: 1170px) {
+  nav >ul>li >a{padding:35px 15px}
+}
+
+@media only screen and (max-width: 959px) {
+  nav{display:none;width:100%;clear:both;float:none;max-height:400px;overflow-y:scroll}
+
+  .search{float:none}
+  .search input{width:100%}
+  nav{padding:10px}
+  nav ul{float:none}
+  nav li{float:none}
+  nav ul li a{float:none;padding:8px;display:block}
+  #header nav ul ul{display:block;position:static;background:none;border:none;padding:0}
+  #header nav a{color:#fff;padding:8px}
+  #header nav a:hover{background:#fff;color:#333;border-radius:3px}
+  #header nav ul li li a:before{content:"- "}
+  .mega-col{width:100%}
+}
+h3{
+text-align: center;
+}
+
+#video {
+     
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     overflow: hidden;
+}
+
+.runetitle12 {
+padding-left:10px;
+width:120px;
+
+}
+
+#rune_title, #rune_title2{
+margin:5px;
+width:50px;
+height: 80px;
+
+
+}
+
+.rune2222 img, .rune4444 img {
+border-radius: 70%;
+background-color:black;
+}
+
+
+#rune_one_main, #rune_two_main {
+border-radius: 70%;
+background-color:black;
+height:70px;
+
+}
+#rune_one {
+color:white;
+display:inline-block;
+width:380px;
+}
+.rune1111 :hover {
+border:#FFBF00 5px solid;
+border-radius: 70%;
+cursor: pointer;
+}
+
+.rune3333 :hover {
+border:#FFBF00 5px solid;
+border-radius: 70%;
+cursor: pointer;
+}
+
+
+#champimg div img{
+width: 20px;
+height: 20px;
+
+
+}
+
+
+
+.runeone, .runetwo {
+background:black;
+border-radius: 70%;
+width:60px;
+object-fit: cover;
+}
+
+#rune_two{
+display:none;
+width:380px;
+}
+.runeone{
+ border:solid 2px white;
+}
+
+.runetwo{
+ border:solid 2px white;
+}
+.goodsynergy, .badsynergy{
+border-radius : 30%;
+width:30px;
+object-fit: cover;
+}
+.goods, .bads{
+margin-bottom: 5px;
+margin-right: 5px;
+display: inline-block;
+}
+.gs, .bs{
+border: solid 3px #1E262D;
+width: 140px;
+height: 78px;
+text-align: center;
+
+background-color:#1E262D;
+
+}
+
+.gs span{
+color:white;
+}
+
+.bs span{
+color:white;
+}
+
+.main {
+   display: flex;
+    margin: 0 auto;
+    width: 1120px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sub_synergy{
+width: 1000px;
+text-align: center;
+height: 50px;
+line-height: 50px;
+}
+#goodsynergy, #badsynergy{
+display: flex;
+flex-wrap: wrap;
+border: solid 3px #1E262D;
+border-collapse: collapse;
+justify-content: center;
+backgroud-color:#1E262D;
+background-color:rgba(255,255,255,0.3);
+width:1120px;
+margin: 0 auto;
+margin-top:30px;
+color:white;
+}
+
+
+div#skill div{
+display: inline-table;
+width : 64px;
+margin-bottom: 20px;
+}
+img.skill{
+border: solid aqua;
+}
+
+#image33{
+width:1100px;
+
+height:220px;
+
+overflow:hidden;  
+
+margin:0 auto; 
+
+object-fit:cover;
+
+position:relative;
+
+z-index:2;
+
+top: -200px;
+
+display:opacity;
+}
+
+
+#champimg{
+text-align: left;
+padding-left:100px;
+position: absolute;
+top: 120px;
+color:white;
+width:900px;
+object-fit: cover;
+text-shadow: 2px 2px 6px white;
+}
+
+.champimg {
+float:left;
+border-radius: 70%;
+
+}
+
+#cmgg{
+text-align:center;
+padding-top:15px;
+width: 1120px;
+margin: 0 auto;
+
+}
+
+#img14 {
+ border: 2px solid black;  
+ width:1100px;
+ height:200px;
+ object-fit:cover;
+ overflow:hidden;
+}
+
+.cma1 {
+font-weight:bold;
+font-size:40px;
+}
+
+.champimg {
+border: 6px solid #FFBF00;
+}
+
+
+.mid2 {
+background-color:#1E262D;
+border-radius:20px 20px 20px 20px;
+width:600px;
+height:350px;
+color:white;
+border: white 3px solid;
+display:grid;
+}
+
+.mid4 {
+background-color:#1E262D;
+border-radius:20px 20px 20px 20px;
+width:500px;
+height:250px;
+color:white;
+border: white 3px solid;
+display:grid;
+}
+
+.mid5 {
+background-color:#1E262D;
+border-radius:20px 20px 20px 20px;
+width:500px;
+height:350px;
+color:white;
+border: white 3px solid;
+display:grid;
+}
+
+
+.mid3 {
+text-align-last: center;
+background-color: #1E262D;
+border-radius: 20px 20px 20px 20px;
+width: 600px;
+height: 250px;
+color: white;
+border: white 3px solid;
+display:grid;
+}
+
+.mid {
+text-align-last: center;
+background-color: #1E262D;
+border-radius: 20px 20px 20px 20px;
+width: 500px;
+height: 250px;
+color: white;
+border: white 3px solid;
+display:grid;
+}
+
+
+.ruru {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   background:#1E262D;
+   width:600px;
+   border-radius:20px 20px 20px 20px;
+   border: white 3px solid;
+   height:250px;
+   flex-wrap: wrap;
+   color : white;
+   
+}
+
+.main22 {
+text-align:center;
+}
+
+.spell{
+border:#FFBF00 3px solid;
+margin-top:12px;
+}
+
+.staringitemone, .staringitemtwo {
+border:#FFBF00 3px solid;
+margin-top: 12px;
+}
+
+.mainitem {
+border:#9A2EFE 3px solid;
+margin-top: 10px;
+}
+img.boots{
+margin-top : 40px;
+border: solid yellow;
+}
+
+#r11, #r33{
+float:left;
+}
+
+#r22,#r44{
+float:right;
+}
+
+.rune12{
+width:450px;
+color:white;
+}
+
+#rune_one_sub, #rune_two_sub {
+border:white 2px solid;
+}
+
+.grgr, .bsbs {
+font-size:12px;
+}
+
+.grgr2, .bsbs2 {
+font-weight: bold;
+}
+#runename{
+width:600px
+}
+
+img.questionmark {
+width: 15px;
+height: 15px;
+}
+.bubble
+{
+display: none;
+position: relative;
+width: 520px;
+padding: 0px;
+background: #FFFEAF;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: #000000 solid 1px;
+bottom: 195px;
+margin-left: 467px;
+color: black;
+font-weight: 600;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 11px 5px 0;
+border-color: #FFFEAF transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -11px;
+left: 83px;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 11px 5px 0;
+border-color: #000000 transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -12px;
+left: 83px;
+}
+img.questionmark:hover + p.bubble {
+  display: block;
+}
+.footer1 {
+background-color:#1E262D;
+bottom:0;
+width:100%;
+text-align:center;
+font-size: 5px;
+padding: 10px;
+color: white;
+}

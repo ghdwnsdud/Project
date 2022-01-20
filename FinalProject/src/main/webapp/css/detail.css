@@ -1,0 +1,380 @@
+@charset "UTF-8";
+body {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+nav a, #header a {
+	text-decoration: none;
+	color: #fff
+}
+
+#header {
+	background: #1E262D;
+	width: 100%;
+	position: relative;
+}
+
+#header:after {
+	content: "";
+	clear: both;
+	display: block
+}
+
+.search {
+	float: right;
+	padding: 28px
+}
+
+input {
+	border: none;
+	padding: 10px;
+	border-radius: 20px
+}
+
+.logo {
+	float: left;
+	padding: 26px 0 26px;
+	font-weight: bold;
+}
+
+.logo a {
+	font-size: 28px;
+	display: block;
+	padding: 0 0 0 20px
+}
+
+nav {
+	float: right;
+}
+
+nav>ul {
+	float: left;
+	position: relative
+}
+
+nav li {
+	list-style: none;
+	float: left
+}
+
+nav li a {
+	float: left;
+	padding: 35px
+}
+
+nav li a:hover {
+	background: #2C3E50
+}
+
+nav li ul {
+	display: none
+}
+
+nav li:hover ul {
+	display: inline
+}
+
+nav li li {
+	float: none
+}
+
+nav li li a {
+	float: none;
+	color: #333;
+	display: block;
+	padding: 8px 10px;
+	border-radius: 3px;
+	font-size: 13px
+}
+
+h3 {
+margin:0;
+}
+
+nav li li a:hover {
+	background: #bdc3c7;
+	background: #FAFBFB
+}
+
+html {
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1,   h4, h5, h6 {
+
+	list-style: none; 
+}
+
+nav ul {
+margin:0;
+
+}
+
+a:link {
+	color: lightblue;
+}
+
+/* 라이브러리 */
+.con {
+	margin: 0 auto;
+}
+
+.img-box>img {
+	width: 100%;
+	display: block;
+}
+
+.row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cell {
+	float: left;
+	box-sizing: border-box;
+}
+
+.cell-right {
+	float: right;
+	box-sizing: border-box;
+}
+
+#cell-right {
+	float: right;
+	box-sizing: border-box;
+}
+
+.margin-0-auto {
+	margin: 0 auto;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.line-height-0-ch-only {
+	line-height: 0;
+}
+
+.line-height-0-ch-only>* {
+	line-height: normal;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute-left {
+	position: absolute;
+	left: 0;
+}
+
+.absolute-right {
+	position: absolute;
+	right: 0;
+}
+
+.absolute-middle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* 커스텀 */
+/* 반응형 레이아웃 */
+.con {
+	max-width: 950px;
+}
+
+.con-min-width {
+	min-width: 320px;
+}
+
+.top-menu a, .top-menu button {
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+.table-common>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table-common .btn-box {
+	text-align: center;
+}
+
+.reply-title {
+	display: block;
+}
+
+.reply-title th {
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.table-common>table th, .table-common>table td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.article-detail {
+	border: 2px solid lightgray;
+}
+
+.article-detail>table {
+	border: none;
+}
+
+.article-detail>table th, .article-detail>table td {
+	border: none;
+}
+
+.article-detail>table tr:not(:last-child) {
+	border-bottom: 1px solid lightgray;
+}
+
+.article-detail>table tr:not(.article-body), .article-detail>table tr:not(.article-body)>td
+	{
+	height: 20px;
+	font-size: 0.8rem;
+}
+
+.article-detail>table tr.article-title>td {
+	height: 40px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.article-detail>.article-writer {
+	width: 100px;
+	height: 102px;
+	background-color: lightgray;
+	border-bottom: 1px solid lightgray;
+	text-align: center;
+}
+
+.article-detail>.article-writer .writer-icon {
+	margin: 0 auto;
+	background-color: white;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.reply {
+	margin-top: 20px;
+	border: 2px solid lightgray;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+}
+
+.reply-form {
+	padding: 10px;
+}
+
+.human-img {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.reply-form>form input[type="text"] {
+	width: 200px;
+	border: none;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.reply-form>form textarea {
+	width: calc(100% - 100px);
+	min-height: 40px;
+	vertical-align: middle;
+}
+
+.reply-form>form input[type="submit"] {
+	width: 80px;
+	height: 40px;
+	transform: translatey(-40%);
+	vertical-align: middle;
+}
+
+.reply-form>form>div:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.reply-list>table {
+	border: none;
+}
+
+.reply-list>table th {
+	display: none;
+}
+
+.reply-list>table td {
+	border: none;
+}
+
+.reply-list>table tr:nth-child(2n+1) {
+	background-color: rgba(0, 0, 0, 0.06);
+}
+
+.reply-list>table td:first-child {
+	font-weight: bold;
+}
+
+.thumb-img {
+	height: 30px;
+	width: 30px;
+}
+
+button {
+	border: 0;
+	outline: 0;
+	background-color: transparent
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#cell-right img {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
+.footer1 {
+background-color:#1E262D;
+bottom:0;
+width:100%;
+text-align:center;
+font-size: 5px;
+padding: 10px;
+color: white;
+}

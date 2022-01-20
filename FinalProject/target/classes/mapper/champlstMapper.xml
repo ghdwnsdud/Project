@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lol.dao.Iloldao">
+	
+	<select id="getChampLst" resultType="Champ">
+		SELECT CHAMPNAME FROM CHAMP_LST
+	</select>
+	
+	<select id="getChampInfo" resultType="Champlst">
+		SELECT * FROM CHAMPINFO WHERE CHAMP_CODE = #{champ_code}
+	</select>
+	
+	<select id="getChampnameinfo" resultType="Champlst">
+		SELECT * FROM CHAMPINFO WHERE CHAMPNAME = #{champname}
+	</select>
+	
+	<select id="getChampionnameinfo" resultType="Champlst">
+		SELECT * FROM CHAMPINFO WHERE CHAMPIONNAME = #{championname}
+	</select>
+	
+	<select id="getChampionlist" resultType="Champlst">
+		SELECT CHAMP_CODE, CHAMPNAME, CHAMP_IMG FROM CHAMPINFO ORDER BY CHAMPNAME
+	</select>
+	
+	<select id="getChampionTierlist" resultType="Champlst">
+		SELECT CHAMP_CODE, CHAMPNAME, CHAMP_IMG, PICK, WIN, TIER FROM (SELECT * FROM CHAMPINFO ORDER BY TIER) WHERE ROWNUM <![CDATA[<]]> 50
+	</select>
+	
+</mapper> 
